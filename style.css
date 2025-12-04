@@ -1,0 +1,199 @@
+body {
+    background-color: #f0f0f0;
+    font-family: 'Sarabun', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+}
+
+.cert-container {
+    background-color: white;
+    background-image: url('cer_bg.png');
+    background-size: cover;
+    /* Changed from contain to cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 210mm;
+    aspect-ratio: 210 / 297;
+    /* Maintain A4 aspect ratio */
+    height: auto;
+    /* Allow height to adjust based on width */
+    padding: 0;
+    /* Remove padding to let background fill */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Overlay Styles - Using percentages for responsiveness */
+/* Overlay Styles - Using percentages for responsiveness */
+.cert-id-overlay {
+    position: absolute;
+    top: 5%;
+    /* Moved down from 4% */
+    right: 5%;
+    font-size: clamp(10px, 1.5vw, 12px);
+    color: #555;
+}
+
+.student-name-overlay {
+    position: absolute;
+    top: 52%;
+    /* Moved down from 55% */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: clamp(16px, 4vw, 28px);
+    font-weight: bold;
+    color: #333;
+    width: 90%;
+}
+
+.cert-between-date-overlay {
+    position: absolute;
+    bottom: 28%;
+    /* Positioned below training duration line */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(16px, 2.8vw, 18px);
+    /* Doubled from clamp(8px, 1.4vw, 11px) */
+    color: #555;
+    width: 100%;
+}
+
+.cert-date-overlay {
+    position: absolute;
+    bottom: 25%;
+    /* Positioned below the between-date line */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: clamp(16px, 2.8vw, 18px);
+    /* Doubled from clamp(8px, 1.4vw, 11px) */
+    color: #555;
+    width: 100%;
+}
+
+/* English Section Header */
+.eng-header {
+    position: absolute;
+    top: 2%;
+    left: 0;
+    right: 0;
+    font-size: clamp(10px, 1.8vw, 14px);
+    color: #666;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Adjustments for Thai Section if needed */
+.thai-section {
+    background-image: none;
+    /* Remove background for Thai section */
+    padding: 40px;
+    justify-content: flex-start;
+}
+
+.thai-header {
+    font-size: clamp(10px, 1.8vw, 14px);
+    color: #666;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+    /* Full width line */
+}
+
+.thai-company {
+    font-size: clamp(10px, 1.8vw, 14px);
+    color: #333;
+    margin-bottom: 15px;
+    letter-spacing: 0.5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    width: 50%;
+    /* 50% width line */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.thai-cert-type {
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.thai-student-name {
+    font-size: clamp(18px, 4vw, 32px);
+    font-weight: bold;
+    color: #333;
+    margin: 20px 0;
+}
+
+.thai-completion {
+    font-size: clamp(10px, 1.8vw, 14px);
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.thai-course {
+    font-size: clamp(12px, 2vw, 16px);
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.thai-cert-number {
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.thai-duration {
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.thai-training-date {
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.thai-issue-date {
+    font-size: clamp(10px, 1.6vw, 13px);
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.thai-section .student-name-overlay {
+    top: 45%;
+}
+
+.thai-section .cert-date-overlay {
+    bottom: 20%;
+}
+
+@media screen and (max-width: 800px) {
+    .cert-container {
+        max-width: 100%;
+    }
+}
