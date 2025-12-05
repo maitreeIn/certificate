@@ -83,7 +83,7 @@ body {
     /* Positioned below the between-date line */
     left: 50%;
     transform: translateX(-50%);
-    font-size: clamp(16px, 2.8vw, 18px);
+    font-size: clamp(16px, 2.8vw, 14px);
     /* Doubled from clamp(8px, 1.4vw, 11px) */
     color: #555;
     width: 100%;
