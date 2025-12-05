@@ -60,8 +60,8 @@ body {
     /* Moved down from 55% */
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: clamp(16px, 4vw, 24px);
-    /* font-weight: bold; */
+    font-size: clamp(18px, 4vw, 32px);
+    font-family: 'Times New Roman', serif;
     color: #333;
     width: 90%;
 }
@@ -72,9 +72,9 @@ body {
     /* Positioned below training duration line */
     left: 50%;
     transform: translateX(-50%);
-    font-size: clamp(12px, 2vw, 14px);
+    font-size: clamp(16px, 2.8vw, 18px);
     font-family: 'Arial', sans-serif;
-    /* Reduced from clamp(16px, 2.8vw, 18px) */
+    line-height: 1.8;
     /* Doubled from clamp(8px, 1.4vw, 11px) */
     color: #555;
     width: 100%;
@@ -86,8 +86,10 @@ body {
     /* Positioned below the between-date line */
     left: 50%;
     transform: translateX(-50%);
-    font-size: clamp(12px, 2vw, 14px);
+    font-size: clamp(16px, 2.8vw, 14px);
     font-family: 'Arial', sans-serif;
+    line-height: 1.8;
+    /* Doubled from clamp(8px, 1.4vw, 11px) */
     color: #555;
     width: 100%;
 }
@@ -98,8 +100,7 @@ body {
     top: 2%;
     left: 0;
     right: 0;
-    font-size: clamp(10px, 1.8vw, 18px);
-    font-family: 'Calibri', sans-serif;
+    font-size: clamp(10px, 1.8vw, 14px);
     color: #666;
     padding-bottom: 8px;
     border-bottom: 1px solid #ddd;
@@ -116,6 +117,7 @@ body {
 
 .thai-header {
     font-size: clamp(10px, 1.8vw, 14px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -127,6 +129,7 @@ body {
 
 .thai-company {
     font-size: clamp(10px, 1.8vw, 14px);
+    font-family: 'Calibri', sans-serif;
     color: #333;
     margin-bottom: 15px;
     letter-spacing: 0.5px;
@@ -136,29 +139,33 @@ body {
     /* 50% width line */
     margin-left: auto;
     margin-right: auto;
+    white-space: nowrap;
 }
 
 .thai-cert-type {
     font-size: clamp(10px, 1.6vw, 13px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 20px;
 }
 
 .thai-student-name {
     font-size: clamp(18px, 4vw, 32px);
-    font-weight: bold;
+    font-family: 'Times New Roman', serif;
     color: #333;
     margin: 20px 0;
 }
 
 .thai-completion {
     font-size: clamp(10px, 1.8vw, 14px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 15px;
 }
 
 .thai-course {
     font-size: clamp(12px, 2vw, 16px);
+    font-family: 'Calibri', sans-serif;
     color: #333;
     margin-bottom: 20px;
     font-weight: 500;
@@ -166,26 +173,33 @@ body {
 
 .thai-cert-number {
     font-size: clamp(10px, 1.6vw, 13px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 10px;
 }
 
 .thai-duration {
     font-size: clamp(10px, 1.6vw, 13px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 8px;
+    line-height: 1.8;
 }
 
 .thai-training-date {
     font-size: clamp(10px, 1.6vw, 13px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 8px;
+    line-height: 1.8;
 }
 
 .thai-issue-date {
     font-size: clamp(10px, 1.6vw, 13px);
+    font-family: 'Calibri', sans-serif;
     color: #666;
     margin-bottom: 10px;
+    line-height: 1.8;
 }
 
 .thai-section .student-name-overlay {
